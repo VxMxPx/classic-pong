@@ -1,0 +1,84 @@
+body {
+  font-family: 'Jaldi', sans-serif;
+  background: black;
+}
+body * {
+  font-family: 'Jaldi', sans-serif;
+}
+
+#game {
+  position: absolute;
+  width: 1002px;
+  height: 800px;
+  left: calc(50% - 500px);
+  top: calc(50% - 400px);
+}
+
+#game #score {
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+  display: flex;
+}
+#game #score span {
+  flex-grow: 1;
+}
+#game #score span:last-child {
+  text-align: right;
+}
+
+#game #notify {
+  color: #000;
+  background: #fff;
+  font-size: 50px;
+  text-align: center;
+  height: 80px;
+  overflow: hidden;
+  line-height: 80px;
+  border-radius: 4px;
+  width: 90%;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  margin-left: 5%;
+  display: none;
+}
+
+#game #mainMenu {
+  position: absolute;
+  top: 0;
+  background: rgba(30, 15, 10, .9);
+  z-index: 4;
+  left: 0;
+  border-radius: 6px;
+  right: 0;
+  bottom: 0;
+}
+#game #mainMenu .buttons {
+  width: 200px;
+  margin: 0 auto;
+  top: 10%;
+  position: relative;
+}
+#game #mainMenu .buttons button {
+  background: rgba(255, 255, 255, .9);
+  border-radius: 6px;
+  color: black;
+  font-size: 26px;
+  width: 100%;
+  border: none;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+}
+#game #mainMenu .buttons button:hover {
+  background: white;
+}
+
+#game canvas#stage {
+  position: relative;
+  cursor: none;
+  border: 2px solid white;
+  border-left: 1px dotted #555;
+  border-right: 1px dotted #555;
+}

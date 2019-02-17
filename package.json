@@ -1,0 +1,19 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "Implementation of classic pong game (with some extra features) in JS using canvas.",
+  "private": true,
+  "scripts": {
+    "build": "nwb build-web-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-web-app --reload"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "nwb": "0.23.x"
+  },
+  "author": "Marko Gjst",
+  "license": "MIT",
+  "repository": "https://github.com/VxMxPx/classic-pong"
+}
