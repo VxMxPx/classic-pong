@@ -136,7 +136,7 @@ export default class Game {
     console.log('Score! Now @', this.scores)
     this.paused = true
     this.ball.reset()
-    this.notify('Score!', 500)
+    this.notify(side === 0 ? 'Your score!' : 'Enemy score!', 1500)
     setTimeout(() => {
       this.paused = false
     }, 500)

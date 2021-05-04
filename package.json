@@ -8,10 +8,9 @@
     "clean": "nwb clean-app",
     "start": "nwb serve-web-app --reload"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "nwb": "0.23.x"
+    "nwb": "0.25.2"
   },
   "author": "Marko Gjst",
   "license": "MIT",

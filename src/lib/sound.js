@@ -8,7 +8,9 @@ export default class Sound {
 
     console.log(`I shall init ${maxSize} sound(s) for ${id}.`)
     for (let i = 0; i < this.size; i++) {
-      this.file = new Audio(`public/assets/sounds/${id}.wav`)
+      let fileRaw = require(`../assets/${id}.wav`).default
+      console.log({fileRaw})
+      this.file = new Audio(fileRaw)
       this.file.volume = 1
       this.file.load()
       this.pool[i] = this.file
